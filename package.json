@@ -1,0 +1,38 @@
+{
+  "name": "showcult.com",
+  "version": "0.1.0",
+  "description": "A Platform for the Movie Maniacs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "import": "node app/import.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arjunmayilvaganan/showcult.com.git"
+  },
+  "keywords": [
+    "movies",
+    "films",
+    "social",
+    "media",
+    "movie",
+    "recommendation"
+  ],
+  "author": "Arjun Mayilvaganan, Raakesh Madana, Thangaram Kannan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arjunmayilvaganan/showcult.com/issues"
+  },
+  "homepage": "http://showcult.com",
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.8",
+    "mongojs": "^2.4.0"
+  }
+}
