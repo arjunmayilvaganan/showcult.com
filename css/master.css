@@ -1,0 +1,15 @@
+body{
+  min-height: 1000px;
+}
+#movielist{
+  margin-top: 90px;
+}
+#navbar{
+  padding: 10px;
+}
+#navbar a{
+  margin-right: 20px;
+}
+#nav-title{
+    font-size: 25px;
+}
