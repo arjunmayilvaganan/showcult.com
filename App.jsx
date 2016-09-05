@@ -5,28 +5,15 @@ class Navbarinv extends React.Component{
     return (
 
         <Navbar inverse fluid fixedTop id="navbar">
+          <Col lgOffset={1} mdOffset={1} smOffset={1}>
+            <Navbar.Header >
+              <Navbar.Brand>
+                <a href="#" id="navTitle">showcult</a>
+              </Navbar.Brand>
 
-          <Navbar.Header >
-            <Navbar.Brand>
-              <a href="#" id="navTitle">showcult</a>
-            </Navbar.Brand>
-            <Col mdHidden smHidden lgHidden xs={5}>
-              <Form id="title-navForm">
-
-                <FormGroup>
-                  <FormControl
-                    type="text"
-                    placeholder="Search"
-                    value=""
-                    //onChange={/*this.handleChange*/}
-                  />
-                </FormGroup>
-
-              </Form>
-            </Col>
-            <Navbar.Toggle />
-          </Navbar.Header>
-
+              <Navbar.Toggle />
+            </Navbar.Header>
+          </Col>
           <Navbar.Collapse>
 
             <Nav pullRight>
@@ -35,7 +22,7 @@ class Navbarinv extends React.Component{
               <NavItem eventKey={2} href="#">Link</NavItem>
 
             </Nav>
-            <Col xsHidden md={6} sm={6} lg={6}>
+            <Col md={4} sm={4} lg={5} lgOffset={1} smOffset={1} mdOffset={1}>
               <Form id="navForm">
 
                 <FormGroup>
@@ -56,6 +43,24 @@ class Navbarinv extends React.Component{
     );
   }
 }
+class Movies extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render(){
+    return(
+      <Col lg={3} md={4} sm={4} xs={6} id="moviestile">
+        <a href="#">
+          <Image src="./img/MforMurder.jpg" responsive />
+
+          <div id="movieTitle">
+            <h4 className="text-center">MforMurder</h4>
+          </div>
+        </a>
+      </Col>
+    );
+  }
+}
 class Moviesection extends React.Component {
   constructor(props) {
     super(props);
@@ -64,72 +69,15 @@ class Moviesection extends React.Component {
     return (
       <Grid id="movieList">
         <Row>
-          <Col xsHidden md={2}></Col>
-          <Col xs={12} md={8}>
-
-            <Moviecards />
-            <Moviecards />
-
-          </Col>
-          <Col xsHidden md={2}></Col>
+          <Movies />
+          <Movies />
+          <Movies />
+          <Movies />
+          <Movies />
+          <Movies />
+          <Movies />
         </Row>
       </Grid>
-    );
-  }
-}
-class Moviecards extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render(){
-    return(
-      <Well>
-        <Row>
-          <Col md={12} xs={12}>
-            <h2 className="text-center">Dial M for Murder</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={4} xs={12}>
-            <Image id="movieImage" src="./img/MforMurder.jpg" responsive/>
-          </Col>
-          <Col md={8} xs={12}>
-            <Row>
-              <Col md={4} xs={4}>
-                <h4>Director : </h4>
-              </Col>
-              <Col md={8} xs={8}>
-                <h4>Alfred Hitchcock.</h4>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={4} xs={4}>
-                <h4>Year :</h4>
-              </Col>
-              <Col md={8} xs={8}>
-                <h4>1954.</h4>
-              </Col>
-
-            </Row>
-            <Row>
-              <Col md={4} xs={4}>
-                <h4>Cast :</h4>
-              </Col>
-              <Col md={8} xs={8}>
-                <h4>Ray Milland, Grace Kelly, Robert Cummings, John Williams, Anthony Dawson.</h4>
-              </Col>
-            </Row>
-            <Row>
-              <Col md={4} xs={4}>
-                <h4>Storyline :</h4>
-              </Col>
-              <Col md={8} xs={8}>
-                <h4>An ex-tennis pro carries out a plot to murder his wife. When things go wrong, he improvises a brilliant plan B.</h4>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Well>
     );
   }
 }
