@@ -1,6 +1,6 @@
 module.exports = {
   entry: './main.js',
-  output: { path: './', filename: 'bundle.js' },
+  output: { path: './dist', filename: 'bundle.js' },
   devServer:{
     inline: true,
     port: 8080
