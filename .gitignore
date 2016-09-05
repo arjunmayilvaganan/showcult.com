@@ -1,3 +1,6 @@
+# Build resultants
+dist
+
 # Logs
 logs
 *.log
