@@ -8,4 +8,4 @@ A Platform for the Movie Maniacs
 4. Generate webpack bundle `npm run build`
 5. Start the server `npm start`
 
-The index will be served at http://localhost:3000/
+The index will be served at http://localhost:3001/
