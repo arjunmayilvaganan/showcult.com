@@ -2,11 +2,11 @@
   "name": "showcult.com",
   "version": "0.1.0",
   "description": "A Platform for the Movie Maniacs",
-  "main": "index.js",
+  "main": "api/index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "node app/import.js && webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "node api/index.js",
     "import": "node app/import.js"
   },
   "repository": {

@@ -1,3 +1,3 @@
 module.exports = {
-  db: process.env.SHOWCULTDB
+  db: process.env.MONGODB_URI
 };
