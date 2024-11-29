@@ -4,6 +4,7 @@
   "description": "A Platform for the Movie Maniacs",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "import": "node app/import.js"
@@ -44,7 +45,7 @@
     "bootstrap": "^3.3.7",
     "express": "^4.14.0",
     "mongodb": "^2.2.8",
-    "mongojs": "^2.4.0",
+    "mongojs": "^3.1.0",
     "morgan": "^1.7.0",
     "react": "^15.3.1",
     "react-bootstrap": "^0.30.3",
